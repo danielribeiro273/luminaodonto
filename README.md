@@ -36,4 +36,4 @@ Como o projeto foi desenvolvido em um **único arquivo HTML**, não é necessár
 
 1. **Clone este repositório:**
    ```bash
-   git clone [https://github.com/seu-usuario/landing-page-odonto.git](https://github.com/seu-usuario/landing-page-odonto.git) 
+   git clone [https://github.com/danielribeiro273/luminaodonto.git](https://github.com/danielribeiro273/luminaodonto.git) 
