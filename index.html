@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Odontologia Estética | Transforme Seu Sorriso</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            gold: '#D97706',
+                            goldHover: '#B45309',
+                            cyan: '#0284C7',
+                            whatsapp: '#25D366',
+                            whatsappHover: '#1eb957',
+                            bgLight: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .whatsapp-pulse {
+            animation: pulse-border 2s infinite;
+        }
+        @keyframes pulse-border {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-brand-bgLight text-slate-800 antialiased selection:bg-brand-cyan selection:text-white">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-xl bg-brand-navy text-brand-gold flex items-center justify-center font-bold text-xl shadow-md">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-brand-navy">Lumina <span class="text-brand-cyan">Odonto</span></span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#tratamentos" class="hover:text-brand-cyan transition-colors">Tratamentos</a>
+                <a href="#diferenciais" class="hover:text-brand-cyan transition-colors">A Clínica</a>
+                <a href="#depoimentos" class="hover:text-brand-cyan transition-colors">Resultados</a>
+                <a href="#faq" class="hover:text-brand-cyan transition-colors">Dúvidas</a>
+            </nav>
+
+            <!-- CTA Header -->
+            <div class="hidden md:flex items-center">
+                <a href="https://wa.me/5500999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20est%C3%A9tica." target="_blank" class="bg-brand-whatsapp hover:bg-brand-whatsappHover text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-md transition-all flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98]">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Agendar Avaliação</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menuBtn" class="md:hidden p-2 text-slate-700 focus:outline-none" aria-label="Abrir Menu">
+                <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#tratamentos" class="block py-2 text-slate-700 font-medium hover:text-brand-cyan">Tratamentos</a>
+            <a href="#diferenciais" class="block py-2 text-slate-700 font-medium hover:text-brand-cyan">A Clínica</a>
+            <a href="#depoimentos" class="block py-2 text-slate-700 font-medium hover:text-brand-cyan">Resultados</a>
+            <a href="#faq" class="block py-2 text-slate-700 font-medium hover:text-brand-cyan">Dúvidas</a>
+            <a href="https://wa.me/5500999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20est%C3%A9tica." target="_blank" class="block text-center bg-brand-whatsapp text-white font-bold py-3 rounded-xl mt-4">
+                <i class="fa-brands fa-whatsapp mr-1"></i> Agendar pelo WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="py-12 lg:py-20 bg-gradient-to-b from-white via-slate-50 to-brand-bgLight overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Text Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-brand-gold text-xs font-bold uppercase tracking-wider">
+                            <i class="fa-solid fa-star"></i> Referência em Estética Dental
+                        </div>
+
+                        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-brand-navy leading-tight">
+                            Transforme sua autoestima com um <span class="text-brand-cyan">sorriso perfeito</span> e natural.
+                        </h1>
+
+                        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            Lentes de contato dental, alinhadores invisíveis e clareamento a laser executados por especialistas com tecnologia de escaneamento 3D sem dor.
+                        </p>
+
+                        <!-- CTA Principal -->
+                        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                            <a href="https://wa.me/5500999999999?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20de%20avalia%C3%A7%C3%A3o." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-whatsapp hover:bg-brand-whatsappHover text-white font-bold text-base shadow-lg shadow-emerald-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                <span>Falar com Especialista no WhatsApp</span>
+                            </a>
+                        </div>
+
+                        <!-- Stats / Prova Social -->
+                        <div class="pt-8 border-t border-slate-200 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                            <div>
+                                <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-navy">+3.500</h3>
+                                <p class="text-xs sm:text-sm text-slate-500">Sorrisos Renovados</p>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-navy">4.9 ★</h3>
+                                <p class="text-xs sm:text-sm text-slate-500">Google Avaliações</p>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-navy">100%</h3>
+                                <p class="text-xs sm:text-sm text-slate-500">Tecnologia Digital</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Showcase -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" alt="Sorriso Perfeito" class="rounded-3xl shadow-2xl object-cover w-full h-[450px] border-4 border-white">
+                            
+                            <!-- Floating Card Badge -->
+                            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-4 hidden sm:flex">
+                                <div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-whatsapp flex items-center justify-center text-2xl">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-semibold uppercase">Garantia & Conforto</p>
+                                    <p class="text-sm font-bold text-slate-800">Procedimentos Sem Dor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TRATAMENTOS -->
+        <section id="tratamentos" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Procedimentos Exclusivos</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-brand-navy">Tratamentos de Alta Tecnologia</p>
+                    <p class="text-slate-600 mt-3 text-base">Soluções personalizadas para devolver a simetria, brilho e saúde ao seu sorriso.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-brand-bgLight p-8 rounded-2xl border border-slate-200 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-sky-100 text-brand-cyan flex items-center justify-center text-2xl mb-6">
+                                <i class="fa-solid fa-tooth"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-brand-navy mb-3">Lentes de Contato Dental</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Lâminas ultra-finas de porcelana personalizadas para corrigir o formato, cor e alinhamento dos dentes com máxima durabilidade.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5500999999999?text=Quero%20saber%20mais%20sobre%20Lentes%20de%20Contato%20Dental." target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-brand-cyan hover:text-sky-700 transition-colors">
+                            <span>Saber mais no WhatsApp</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-brand-bgLight p-8 rounded-2xl border border-slate-200 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-amber-100 text-brand-gold flex items-center justify-center text-2xl mb-6">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-brand-navy mb-3">Clareamento a Laser</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Protocolo acelerado com luz laser que remove manchas profundas e devolve o tom branco natural na primeira sessão sem sensibilidade.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5500999999999?text=Quero%20saber%20mais%20sobre%20Clareamento%20a%20Laser." target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-brand-cyan hover:text-sky-700 transition-colors">
+                            <span>Saber mais no WhatsApp</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-brand-bgLight p-8 rounded-2xl border border-slate-200 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-6">
+                                <i class="fa-solid fa-align-center"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-brand-navy mb-3">Alinhadores Invisíveis</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Placas transparentes removíveis que alinham seus dentes com rapidez e total discrição, sem o incômodo dos aparelhos fixos.
+                            </p>
+                        </div>
+                        <a href="https://wa.me/5500999999999?text=Quero%20saber%20mais%20sobre%20Alinhadores%20Invis%C3%ADveis." target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-brand-cyan hover:text-sky-700 transition-colors">
+                            <span>Saber mais no WhatsApp</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER DE CONVERSÃO INTERMEDIÁRIO -->
+        <section class="py-16 bg-brand-navy text-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h2 class="text-2xl sm:text-4xl font-extrabold mb-4">Pronto para dar o primeiro passo em direção ao seu novo sorriso?</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto mb-8 text-sm sm:text-base">Agende uma consulta de avaliação digital em menos de 2 minutos diretamente pelo nosso WhatsApp oficial.</p>
+                <a href="https://wa.me/5500999999999?text=Ol%C3%A1!%20Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20agora." target="_blank" class="inline-flex items-center gap-3 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white px-8 py-4 rounded-xl font-bold text-base shadow-xl transition-all hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Agendar Minha Avaliação Agora</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ (PERGUNTAS FREQUENTES) -->
+        <section id="faq" class="py-20 bg-brand-bgLight">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-2">Esclareça suas Dúvidas</h2>
+                    <p class="text-3xl font-extrabold text-brand-navy">Perguntas Frequentes</p>
+                </div>
+
+                <div class="space-y-4" id="faqAccordion">
+                    <!-- Item 1 -->
+                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <button class="faq-btn w-full px-6 py-5 text-left font-bold text-brand-navy flex justify-between items-center focus:outline-none">
+                            <span>O tratamento com Lentes de Contato dói?</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                            Não. Todo o processo é feito sob anestesia local computadorizada e de forma extremamente delicada. O paciente não sente dor durante a preparação e aplicação das lâminas.
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <button class="faq-btn w-full px-6 py-5 text-left font-bold text-brand-navy flex justify-between items-center focus:outline-none">
+                            <span>Quanto tempo dura o Clareamento a Laser?</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                            A sessão em consultório dura em média 50 minutos. Os resultados duram tipicamente de 1 a 3 anos, dependendo dos hábitos alimentares do paciente (consumo de café, vinho, etc.).
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                        <button class="faq-btn w-full px-6 py-5 text-left font-bold text-brand-navy flex justify-between items-center focus:outline-none">
+                            <span>Como funciona a primeira avaliação?</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                            Na primeira consulta realizamos o escaneamento intraoral 3D, fotos de alta resolução do seu sorriso e o planejamento digital para que você veja o resultado final previsto antes de começar.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+                <span class="text-xl font-extrabold text-white">Lumina <span class="text-brand-cyan">Odonto</span></span>
+                <p class="text-xs text-slate-500 mt-1">CRO-SP 123456 | RT: Dra. Juliana Silva</p>
+            </div>
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Lumina Odontologia Estética. Todos os direitos reservados.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
+    <a href="https://wa.me/5500999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-brand-whatsapp hover:bg-brand-whatsappHover text-white rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 whatsapp-pulse transition-transform hover:scale-110" aria-label="Atendimento via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JAVASCRIPT EM EMBUTIDO -->
+    <script>
+        // --- 1. Menu Mobile Toggle ---
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            } else {
+                menuIcon.classList.replace('fa-bars', 'fa-xmark');
+            }
+        });
+
+        // Fechar menu mobile ao clicar num link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.replace('fa-bars', 'fa-xmark');
+            });
+        });
+
+        // --- 2. FAQ Accordion Logic ---
+        const faqBtns = document.querySelectorAll('.faq-btn');
+
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+
+                // Toggle visibility
+                content.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (content.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
